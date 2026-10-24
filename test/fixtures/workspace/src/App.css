@@ -1,0 +1,171 @@
+.demo-page {
+  max-width: 780px;
+  margin: 48px auto;
+  padding: 32px;
+  color: #edf2ff;
+  background: #111827;
+  font-family: Inter, Arial, sans-serif;
+}
+
+.demo-header {
+  margin-bottom: 28px;
+}
+
+.eyebrow {
+  color: #93c5fd;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+}
+
+.page-title {
+  margin: 8px 0;
+  font-size: 32px;
+}
+
+.intro-copy,
+.card-copy,
+.tile-copy {
+  color: #aab5ca;
+  line-height: 1.6;
+}
+
+.preview-card {
+  padding: 24px;
+  border: 1px solid #293449;
+  border-radius: 16px;
+  background: #0c172e;
+
+  & .card-title {
+    margin: 12px 0 0;
+    color: #f8fafc;
+    font-size: 21px;
+  }
+
+  & .button-row {
+    gap: 10px;
+  }
+}
+
+.card-heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.status-badge {
+  display: inline-block;
+  padding: 6px 10px;
+  border-radius: 999px;
+  color: #bbf7d0;
+  background-color: #14532d;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.avatar {
+  display: inline-flex;
+  width: 42px;
+  height: 42px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  color: white;
+  background-color: #7c3aed;
+  font-weight: 700;
+}
+
+.card-copy {
+  max-width: 580px;
+  margin: 16px 0 22px;
+}
+
+.button-row,
+.tag-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.component {
+  padding: 12px 20px;
+  border: none;
+  border-radius: 8px;
+  color: rgb(255, 255, 255);
+  background-color: #2825eb;
+  font-weight: 600;
+}
+
+.secondary-button {
+  padding: 12px 20px;
+  border: 1px solid #526078;
+  border-radius: 8px;
+  color: #e2e8f0;
+  background-color: #263248;
+}
+
+.danger-button {
+  padding: 12px 20px;
+  border: none;
+  border-radius: 8px;
+  color: white;
+  background-color: #be123c;
+  font-weight: 600;
+}
+
+.tag-row {
+  margin-top: 22px;
+}
+
+.tag {
+  display: inline-block;
+  padding: 5px 9px;
+  border-radius: 6px;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.tag-blue {
+  color: #bfdbfe;
+  background-color: #1e3a8a;
+}
+
+.tag-green {
+  color: #bbf7d0;
+  background-color: #14532d;
+}
+
+.tag-purple {
+  color: #e9d5ff;
+  background-color: #581c87;
+}
+
+.info-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 14px;
+  margin-top: 16px;
+}
+
+.info-tile {
+  padding: 18px;
+  border: 1px solid #293449;
+  border-radius: 12px;
+  background-color: #151e2e;
+}
+
+.tile-icon {
+  color: #93c5fd;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.tile-title {
+  margin: 10px 0 4px;
+  font-size: 15px;
+}
+
+.tile-copy {
+  margin: 0;
+  font-size: 13px;
+}

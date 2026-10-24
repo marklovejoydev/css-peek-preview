@@ -1,0 +1,90 @@
+{
+  "name": "css-peek-preview",
+  "displayName": "CSS Peek Preview",
+  "description": "Preview CSS rules for the class under your cursor.",
+  "version": "0.1.1",
+  "publisher": "css-peek-preview",
+  "license": "MIT",
+  "engines": {
+    "vscode": "^1.106.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "keywords": [
+    "css",
+    "scss",
+    "peek",
+    "preview",
+    "css modules"
+  ],
+  "activationEvents": [
+    "onCommand:css-peek-preview.show"
+  ],
+  "main": "./out/src/extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "css-peek-preview.show",
+        "title": "CSS Peek Preview: Show Preview"
+      },
+      {
+        "command": "css-peek-preview.openSource",
+        "title": "CSS Peek Preview: Open Source"
+      }
+    ],
+    "keybindings": [
+      {
+        "command": "css-peek-preview.show",
+        "key": "alt+shift+c",
+        "when": "editorTextFocus"
+      }
+    ],
+    "configuration": {
+      "title": "CSS Peek Preview",
+      "properties": {
+        "cssPeekPreview.stylesheetPath": {
+          "type": "string",
+          "default": "{directory}/{name}.css",
+          "description": "Stylesheet path pattern. Relative patterns are resolved from the containing workspace root, or the source file directory outside a workspace. Use {directory}, {name}, and {extension}. Absolute filesystem paths are used as-is."
+        },
+        "cssPeekPreview.searchWorkspace": {
+          "type": "boolean",
+          "default": false,
+          "description": "Search other workspace stylesheets only when the configured candidates do not contain a matching class."
+        },
+        "cssPeekPreview.stylesheetExtensions": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "default": [
+            ".css",
+            ".scss"
+          ],
+          "description": "Stylesheet extensions considered when resolving candidates. Include the leading dot."
+        }
+      }
+    }
+  },
+  "scripts": {
+    "vscode:prepublish": "npm run compile",
+    "compile": "tsc -p ./",
+    "watch": "tsc -watch -p ./",
+    "test": "npm run compile && node ./out/test/runTest.js"
+  },
+  "dependencies": {
+    "postcss": "^8.5.29",
+    "postcss-scss": "^4.0.9",
+    "postcss-selector-parser": "^7.1.0"
+  },
+  "devDependencies": {
+    "@types/mocha": "^10.0.10",
+    "@types/node": "^22.15.30",
+    "@types/react": "^19.3.0",
+    "@types/vscode": "^1.106.0",
+    "@vscode/test-electron": "^3.1.0",
+    "mocha": "^11.7.1",
+    "typescript": "^5.9.3"
+  }
+}
