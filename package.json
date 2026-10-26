@@ -3,7 +3,7 @@
   "displayName": "CSS Peek Preview",
   "description": "Preview CSS rules for the class under your cursor.",
   "version": "0.1.1",
-  "publisher": "css-peek-preview",
+  "publisher": "MLDev",
   "license": "MIT",
   "engines": {
     "vscode": "^1.106.0"
