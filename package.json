@@ -5,6 +5,10 @@
   "version": "0.1.1",
   "publisher": "MLDev",
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/marklovejoydev/css-peek-preview.git"
+  },
   "engines": {
     "vscode": "^1.106.0"
   },
